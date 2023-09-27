@@ -6,3 +6,7 @@ jobs:
     uses: ./.github/workflows/reusable-workflow-info.yml
     with:
       caller-name: Super-APP!
+  Building-Installing-NodeJS:
+    uses: ./.github/workflows/reusable-workflow-nodejs-install-build-test.yml
+    with:
+      node-version: '20.x'
