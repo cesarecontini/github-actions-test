@@ -1,0 +1,17 @@
+{
+  "name": "github-actions",
+  "version": "1.0.0",
+  "description": "This is a test",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "jest": "^29.7.0"
+  }
+}
