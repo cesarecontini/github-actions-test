@@ -14,4 +14,4 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - run: echo "${{ github.actor }} has logged in successfully into docker hub"
+      - run: echo " ${{ secrets.DOCKERHUB_USERNAME }} has logged in successfully into docker hub"
