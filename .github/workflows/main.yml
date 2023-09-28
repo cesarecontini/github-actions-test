@@ -13,4 +13,5 @@ jobs:
   Logging-Into-My-DockerHub:
     uses: ./.github/workflows/reusable-docker-login.yml
     secrets: 
-      inherit: true
+      username: ${{ secrets.DOCKERHUB_USERNAME }}
+      password: ${{ secrets.DOCKERHUB_TOKEN }}
