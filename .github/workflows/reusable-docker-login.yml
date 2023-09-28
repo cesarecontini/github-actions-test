@@ -27,6 +27,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          push: false
-          tags: cesarecontini/my-node-app-test:latest
+          push: true
+          tags: cesarecontini/tiny-small-node-app-test:latest
           
