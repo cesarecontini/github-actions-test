@@ -1,6 +1,10 @@
 name: Reusable Security Scan
 on:
   workflow_call:
+    inputs:
+      image-name:
+        required: true
+        type: string
 jobs:
   login:
     runs-on: ubuntu-latest
@@ -9,7 +13,7 @@ jobs:
         name: Run Trivy for all CVEs (non-blocking)
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: ${{ github.run_id }}
+          image-ref: ${{ inputs.image-name }}
           exit-code: 0
           format: table 
           

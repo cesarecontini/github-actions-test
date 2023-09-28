@@ -8,7 +8,7 @@ on:
         required: false
         default: '20.x'
 jobs:
-  Explore-GitHub-Actions:
+  NodeJs-Build-And-Test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

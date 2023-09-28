@@ -17,3 +17,5 @@ jobs:
       password: ${{ secrets.DOCKERHUB_TOKEN }}
   Scanning-Security:
     uses: ./.github/workflows/reusable-scanner-security.yml
+    with:
+      image-name: cesarecontini/tiny-small-node-app-test:latest
